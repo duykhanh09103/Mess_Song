@@ -1,0 +1,92 @@
+[
+    {
+        "key": "ps_l",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.603Z",
+        "lastAccessed": "2025-01-04T11:20:47.603Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.603Z",
+        "lastAccessed": "2025-01-04T11:20:47.603Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_US",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "datr",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "sb",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "wd",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "c_user",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "fr",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "xs",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    },
+    {
+        "key": "presence",
+        "value": "REDACTED",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-01-04T11:20:47.604Z",
+        "lastAccessed": "2025-01-04T11:20:47.604Z"
+    }
+]
