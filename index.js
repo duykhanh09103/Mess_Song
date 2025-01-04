@@ -7,7 +7,10 @@ const chrome = require('selenium-webdriver/chrome');
 const { user_data_dir, Chrome_profile_name, headless, ytdlp_binary_path, chrome_binary_path, vlc_binary_path, mmdeviceId,StartCallText,chromeDriver_binary_path } = require("./config.json");
 
 //chrome config
-let option = new chrome.Options().addArguments(`user-data-dir=${user_data_dir}`).addArguments(`profile-directory=${Chrome_profile_name}`).setBinaryPath(chrome_binary_path);
+let option = new chrome.Options().addArguments(`user-data-dir=${user_data_dir}`).addArguments(`profile-directory=${Chrome_profile_name}`)
+if(chrome_binary_path != ""){ 
+    option.setBinaryPath(chrome_binary_path);
+}
 if (headless) {
     option.addArguments("--headless");
 }
