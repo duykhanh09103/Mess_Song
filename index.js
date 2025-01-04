@@ -4,16 +4,13 @@ const childproc = require('node:child_process');
 const fs = require('node:fs');
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
-const { user_data_dir, Chrome_profile_name, headless, ytdlp_binary_path, chromium_binary_path, vlc_binary_path, mmdeviceId,StartCallText } = require("./config.json");
+const { user_data_dir, Chrome_profile_name, headless, ytdlp_binary_path, chrome_binary_path, vlc_binary_path, mmdeviceId,StartCallText,chromeDriver_binary_path } = require("./config.json");
 
 //chrome config
-let option = new chrome.Options().addArguments(`user-data-dir=${user_data_dir}`).addArguments(`profile-directory=${Chrome_profile_name}`)
+let option = new chrome.Options().addArguments(`user-data-dir=${user_data_dir}`).addArguments(`profile-directory=${Chrome_profile_name}`).setBinaryPath(chrome_binary_path);
 if (headless) {
     option.addArguments("--headless");
 }
-
-
-
 
 async function writeToDb(data) {
     const { JSONFilePreset } = await import("lowdb/node");
@@ -51,13 +48,13 @@ login({ appState: JSON.parse(fs.readFileSync('fbstate.json', 'utf8')) }, async (
     if (err) return console.error(err);
     console.log(`Logged in as ${api.getCurrentUserID()}`);
     
-    //build the chrome driver
-    let driver = await new Builder().forBrowser(Browser.CHROME).setChromeOptions(option).build();
 
 
     api.listenMqtt(async (err, message) => {
         if (err) return console.error(err);
         if (message && message.body && message.body.startsWith("/startcall")) {
+            //build the chrome driver
+            let driver = await new Builder().forBrowser(Browser.CHROME).setChromeOptions(option).build();
             let data = (await getData()).find((group) => { return group.id == message.threadID });
             console.log(data);
             //check if there is data or nah

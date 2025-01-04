@@ -4,7 +4,8 @@
     "Chrome_profile_name":"",
     "ytdlp_binary_path":"",
     "vlc_binary_path":"",
-    "chromium_binary_path":"",
+    "chrome_binary_path":"",
+    "chromeDriver_binary_path":"",
     "mmdeviceId":"",
     "StartCallText":""
 }
