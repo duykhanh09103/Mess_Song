@@ -11,6 +11,10 @@ Simple overview of use/purpose.
 
 Facebook self bot with selenium that gonna play song in messenger call!
 
+## Demo video
+
+ Coming soon
+
 ## Getting Started
 
 ### Dependencies
@@ -22,6 +26,7 @@ Facebook self bot with selenium that gonna play song in messenger call!
 ### Installing
 
 * Download source code or use ```git clone https://github.com/duykhanh09103/Mess_Song```
+* Install video coming soon!
 
 ### Executing program
 
@@ -30,6 +35,11 @@ Facebook self bot with selenium that gonna play song in messenger call!
 node index.js
 ```
 
+## How to get fbstate
+**WARNING: THERES FAKE C3C chrome extension on the chrome web store! remember to install the right one**
+- install chrome extension from [c3c-ufc-utility](https://github.com/c3cbot/c3c-ufc-utility)
+- paste the infomation into fbstate.json
+- change ```fbstate.json.example``` to ```fbstate.json```.
 ## Authors
 
 Khanh Duy  
