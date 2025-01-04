@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lowdb": "^7.0.1",
+    "npmlog": "^7.0.1",
+    "selenium-webdriver": "^4.27.0",
+    "ws3-fca": "^1.0.25"
+  }
+}

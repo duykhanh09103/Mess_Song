@@ -1,0 +1,9 @@
+{
+    "user_data_dir":"",
+    "headless":false,
+    "Chrome_profile_name":"",
+    "ytdlp_binary_path":"",
+    "vlc_binary_path":"",
+    "chromium_binary_path":"",
+    "mmdeviceId":""
+}
