@@ -13,7 +13,7 @@ Facebook self bot with selenium that gonna play song in messenger call!
 
 ## Demo video
 
- Coming soon
+ <video controls src="https://cloud-1yy8ubqnu-hack-club-bot.vercel.app/02025-01-07_18-14-33.mp4" title="Demo video"></video>
 
 ## Getting Started
 
@@ -29,6 +29,8 @@ Facebook self bot with selenium that gonna play song in messenger call!
 * Install video coming soon!
 
 ### Executing program
+
+*There will be a demo setup video **soon**
 
 * changed the config.json.example file to config.json and fill in the config
 * change fbstate.json.example to fbstate.json and fill in the file.

@@ -51,19 +51,18 @@ login({ appState: JSON.parse(fs.readFileSync('fbstate.json', 'utf8')) }, async (
     if (err) return console.error(err);
     console.log(`Logged in as ${api.getCurrentUserID()}`);
     
-
+    let driver = await new Builder().forBrowser(Browser.CHROME).setChromeOptions(option).build();
 
     api.listenMqtt(async (err, message) => {
         if (err) return console.error(err);
-        if (message && message.body && message.body.startsWith("/startcall")) {
+        if (message && message.body && message.body.toLowerCase().startsWith("/join")) {
             //build the chrome driver
-            let driver = await new Builder().forBrowser(Browser.CHROME).setChromeOptions(option).build();
             let data = (await getData()).find((group) => { return group.id == message.threadID });
             console.log(data);
             //check if there is data or nah
             if (data == undefined) {
                 await api.sendMessage("Error! There's no call id for this group", message.threadID);
-                return;
+                return ;
             }
             let roomId = data.roomId;
             try {
