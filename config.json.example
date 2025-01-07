@@ -5,7 +5,6 @@
     "ytdlp_binary_path":"",
     "vlc_binary_path":"",
     "chrome_binary_path":"",
-    "chromeDriver_binary_path":"",
     "mmdeviceId":"",
     "StartCallText":""
 }

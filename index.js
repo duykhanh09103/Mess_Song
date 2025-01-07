@@ -4,7 +4,7 @@ const childproc = require('node:child_process');
 const fs = require('node:fs');
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
-const { user_data_dir, Chrome_profile_name, headless, ytdlp_binary_path, chrome_binary_path, vlc_binary_path, mmdeviceId,StartCallText,chromeDriver_binary_path } = require("./config.json");
+const { user_data_dir, Chrome_profile_name, headless, ytdlp_binary_path, chrome_binary_path, vlc_binary_path, mmdeviceId,StartCallText } = require("./config.json");
 
 //chrome config
 let option = new chrome.Options().addArguments(`user-data-dir=${user_data_dir}`).addArguments(`profile-directory=${Chrome_profile_name}`)

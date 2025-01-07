@@ -30,6 +30,9 @@ Facebook self bot with selenium that gonna play song in messenger call!
 
 ### Executing program
 
+* changed the config.json.example file to config.json and fill in the config
+* change fbstate.json.example to fbstate.json and fill in the file.
+* install chrome driver and put it in path
 * run the below command
 ```
 node index.js
